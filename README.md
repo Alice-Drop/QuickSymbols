@@ -2,7 +2,7 @@
 
 一个用于生成苹果输入法自定义短语文件的静态网页工具，可以让你快速输入大量输入法原本没有自带的常用符号。
 
-在线体验：[Quick Symbols](https://qsymbols.alicedrop.site)
+在线体验：[https://qsymbols.alicedrop.site](https://qsymbols.alicedrop.site)
 
 包含常用特殊符号、单位、数学符号、集合逻辑、箭头、希腊字母等，按分类整理成可选项，用户勾选后即可一键导出 plist，并导入到 macOS 输入法中使用。
 
