@@ -16,11 +16,9 @@ const library = [
   { category: "common", symbol: "✗", label: "叉号", code: "cha", keywords: ["cross", "cancel", "错误"] },
   { category: "common", symbol: "☑", label: "选中框", code: "xuankuang", keywords: ["checkbox", "select", "勾选"] },
   { category: "common", symbol: "♥", label: "实心爱心", code: "aixin", keywords: ["heart", "love", "喜欢"] },
-  { category: "common", symbol: "♡", label: "空心爱心", code: "kongxin", keywords: ["heart", "outline", "收藏"] },
-  { category: "common", symbol: "•", label: "圆点", code: "yuandian", keywords: ["bullet", "dot", "列表"] },
-  { category: "common", symbol: "·", label: "间隔点", code: "jiangedian", keywords: ["middle dot", "separator", "间隔"] },
-  { category: "common", symbol: "…", label: "省略号", code: "shenglve", keywords: ["ellipsis", "dotdot", "省略"] },
-  { category: "common", symbol: "—", label: "破折号", code: "pozhe", keywords: ["dash", "emdash", "连接"] },
+  { category: "common", symbol: "♡", label: "空心爱心", code: "aixin", keywords: ["heart", "outline", "收藏"] },
+  { category: "common", symbol: "•", label: "圆点", code: "dian", keywords: ["bullet", "dot", "列表"] },
+  { category: "common", symbol: "·", label: "间隔点", code: "dian", keywords: ["middle dot", "separator", "间隔"] },
   { category: "common", symbol: "‰", label: "千分号", code: "qianfen", keywords: ["permille", "rate", "比例"] },
   { category: "common", symbol: "§", label: "章节符", code: "zhangjie", keywords: ["section", "legal", "条款"] },
   { category: "common", symbol: "№", label: "编号符", code: "bianhao", keywords: ["number", "no", "编号"] },
@@ -29,10 +27,9 @@ const library = [
   { category: "common", symbol: "™", label: "商标", code: "tm", keywords: ["trademark", "商标", "品牌"] },
   { category: "common", symbol: "′", label: "单撇", code: "danpie", keywords: ["prime", "minute", "撇"] },
   { category: "common", symbol: "″", label: "双撇", code: "shuangpie", keywords: ["double prime", "second", "双撇"] },
-  { category: "common", symbol: "°", label: "度数符", code: "du", keywords: ["degree", "temperature", "温度"] },
-
-  { category: "units", symbol: "°C", label: "摄氏度", code: "duc", keywords: ["celsius", "temperature", "摄氏"] },
-  { category: "units", symbol: "°F", label: "华氏度", code: "duf", keywords: ["fahrenheit", "temperature", "华氏"] },
+  { category: "common", symbol: "°", label: "度数符", code: "du", keywords: ["degree", "temperature", "角度"] },
+  { category: "units", symbol: "°C", label: "摄氏度", code: "du", keywords: ["celsius", "temperature", "摄氏"] },
+  { category: "units", symbol: "°F", label: "华氏度", code: "du", keywords: ["fahrenheit", "temperature", "华氏"] },
   { category: "units", symbol: "℃", label: "摄氏温标", code: "sheshi", keywords: ["celsius", "thermo", "摄氏"] },
   { category: "units", symbol: "℉", label: "华氏温标", code: "huashi", keywords: ["fahrenheit", "thermo", "华氏"] },
   { category: "units", symbol: "μm", label: "微米", code: "weimi", keywords: ["micrometer", "length", "微米"] },
@@ -54,7 +51,7 @@ const library = [
   { category: "math", symbol: "≤", label: "小于等于", code: "xiaodeng", keywords: ["less equal", "compare", "比较"] },
   { category: "math", symbol: "≥", label: "大于等于", code: "dadeng", keywords: ["greater equal", "compare", "比较"] },
   { category: "math", symbol: "∞", label: "无穷大", code: "wuqiong", keywords: ["infinity", "limit", "无穷"] },
-  { category: "math", symbol: "√", label: "根号", code: "gen", keywords: ["sqrt", "root", "开方"] },
+  { category: "math", symbol: "√", label: "根号", code: "genhao", keywords: ["sqrt", "root", "开方"] },
   { category: "math", symbol: "∑", label: "求和", code: "sum", keywords: ["sum", "sigma", "累加"] },
   { category: "math", symbol: "∏", label: "连乘", code: "prod", keywords: ["product", "pi", "连乘"] },
   { category: "math", symbol: "∫", label: "积分", code: "jifen", keywords: ["integral", "calculus", "积分"] },
@@ -62,7 +59,7 @@ const library = [
   { category: "math", symbol: "∮", label: "环路积分", code: "huanji", keywords: ["contour integral", "calculus", "闭合积分"] },
   { category: "math", symbol: "∂", label: "偏导", code: "piandao", keywords: ["partial", "derivative", "偏导"] },
   { category: "math", symbol: "∇", label: "梯度", code: "nabla", keywords: ["gradient", "nabla", "梯度"] },
-  { category: "math", symbol: "∝", label: "成正比", code: "chengbi", keywords: ["proportional", "ratio", "比例"] },
+  { category: "math", symbol: "∝", label: "成正比", code: ["chengzhengbi", "zhengbi"], keywords: ["proportional", "ratio", "比例"] },
   { category: "math", symbol: "∵", label: "因为", code: "yinwei", keywords: ["because", "logic", "因为"] },
   { category: "math", symbol: "∴", label: "所以", code: "suoyi", keywords: ["therefore", "logic", "所以"] },
   { category: "math", symbol: "⊥", label: "垂直", code: "chuizhi", keywords: ["perpendicular", "geometry", "垂直"] },
@@ -77,9 +74,9 @@ const library = [
   { category: "logic", symbol: "⊃", label: "真超集", code: "zhenchaoji", keywords: ["proper superset", "set", "真超集"] },
   { category: "logic", symbol: "⊆", label: "子集", code: "ziji", keywords: ["subset", "set", "子集"] },
   { category: "logic", symbol: "⊇", label: "超集", code: "chaoji", keywords: ["superset", "set", "超集"] },
-  { category: "logic", symbol: "∧", label: "逻辑与", code: "and", keywords: ["logical and", "logic", "且"] },
-  { category: "logic", symbol: "∨", label: "逻辑或", code: "or", keywords: ["logical or", "logic", "或"] },
-  { category: "logic", symbol: "¬", label: "逻辑非", code: "not", keywords: ["logical not", "logic", "非"] },
+  { category: "logic", symbol: "∧", label: "逻辑与", code: ["yu", "and"], keywords: ["logical and", "logic", "且"] },
+  { category: "logic", symbol: "∨", label: "逻辑或", code: ["huo", "or"], keywords: ["logical or", "logic", "或"] },
+  { category: "logic", symbol: "¬", label: "逻辑非", code: ["fei", "not"], keywords: ["logical not", "logic", "非"] },
   { category: "logic", symbol: "∀", label: "任意", code: "renyi", keywords: ["for all", "logic", "任意"] },
   { category: "logic", symbol: "∃", label: "存在", code: "cunzai", keywords: ["exists", "logic", "存在"] },
 
@@ -122,11 +119,17 @@ const library = [
   { category: "greekUpper", symbol: "Φ", label: "Phi", code: "capphi", keywords: ["greek", "phi", "uppercase"] },
   { category: "greekUpper", symbol: "Ψ", label: "Psi", code: "cappsi", keywords: ["greek", "psi", "uppercase"] },
   { category: "greekUpper", symbol: "Ω", label: "Omega", code: "capomega", keywords: ["greek", "omega", "uppercase"] }
-].map((item) => ({
-  ...item,
-  id: `${item.category}-${String(item.code).toLowerCase()}`,
-  keywordsText: [item.symbol, item.label, item.code, ...(item.keywords || [])].join(" ").toLowerCase()
-}));
+].map((item, index) => {
+  const codes = [...new Set((Array.isArray(item.code) ? item.code : [item.code])
+    .map((code) => String(code).trim())
+    .filter(Boolean))];
+  return {
+    ...item,
+    code: codes,
+    id: `${item.category}-${index}`,
+    keywordsText: [item.symbol, item.label, ...codes, ...(item.keywords || [])].join(" ").toLowerCase()
+  };
+});
 
 const state = {
   activeCategory: "all",
@@ -237,7 +240,7 @@ function renderGrid() {
 
   gridElement.innerHTML = visibleItems
     .map((item) => {
-      const shortcut = composeShortcut(item);
+      const shortcuts = composeShortcuts(item);
       const selected = state.selectedIds.has(item.id);
       return `
         <div class="symbol-card ${selected ? "selected" : ""}" data-id="${item.id}" tabindex="0" role="button" aria-pressed="${selected}">
@@ -249,7 +252,7 @@ function renderGrid() {
             <p class="symbol-label">${escapeHtml(item.label)}</p>
           </div>
           <div class="symbol-meta">
-            <span class="shortcut">${escapeHtml(shortcut)}</span>
+            <span class="shortcut">${escapeHtml(shortcuts.join(" / "))}</span>
           </div>
         </div>
       `;
@@ -343,19 +346,19 @@ function getSelectedItems() {
   return library.filter((item) => state.selectedIds.has(item.id));
 }
 
-function composeShortcut(item) {
-  return `${state.prefix}${String(item.code).toLowerCase()}`;
+function composeShortcuts(item) {
+  return item.code.map((code) => `${state.prefix}${String(code).toLowerCase()}`);
 }
 
 function buildPlist(items) {
   const rows = items
-    .map((item) => {
-      return `\t<dict>
+    .flatMap((item) => {
+      return composeShortcuts(item).map((shortcut) => `\t<dict>
 \t\t<key>phrase</key>
 \t\t<string>${escapeXml(item.symbol)}</string>
 \t\t<key>shortcut</key>
-\t\t<string>${escapeXml(composeShortcut(item))}</string>
-\t</dict>`;
+\t\t<string>${escapeXml(shortcut)}</string>
+\t</dict>`);
     })
     .join("\n");
 
